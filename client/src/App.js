@@ -81,7 +81,7 @@ function App(props) {
                     <BootNav refreshFunction={updateSearchTerm} />
                 )}
             </Route>
-            <Route path="/lippick/">
+            <Route path="/home">
                 <HomeWrap
                     Products={Products}
                     refreshFunction={updateSearchTerm}
