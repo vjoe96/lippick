@@ -1,8 +1,8 @@
 {
-  "name": "lippick02",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+ "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
     "@teachablemachine/image": "^0.8.5",
     "@tensorflow-models/face-landmarks-detection": "^0.0.3",
@@ -50,8 +50,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+  "deploy": "gh-pages -d build"
+   
   },
   "eslintConfig": {
     "extends": "react-app"
