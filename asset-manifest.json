@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/lippick/static/css/main.0a3e8061.css",
+    "main.js": "/lippick/static/js/main.25c9d980.js",
+    "static/media/chanel_cut.mp4": "/lippick/static/media/chanel_cut.ded08f4c3f7e90e4cf2c.mp4",
+    "static/media/care_banner_s.webp": "/lippick/static/media/care_banner_s.404ff5489da0a6e84f6c.webp",
+    "static/media/care_model.png": "/lippick/static/media/care_model.b9df4ee74abd77a4552a.png",
+    "static/media/lipstick_model.png": "/lippick/static/media/lipstick_model.c5ea5c454ea187edd89a.png",
+    "static/media/liquid_banner_s.webp": "/lippick/static/media/liquid_banner_s.2bc77ec0d0bafeab0fa0.webp",
+    "static/media/gloss_banner_s.webp": "/lippick/static/media/gloss_banner_s.aed412b0192be803b17e.webp",
+    "static/media/liquid_model.png": "/lippick/static/media/liquid_model.ddb76812068a955570a4.png",
+    "static/media/care_banner.webp": "/lippick/static/media/care_banner.29700060c798cf8e2731.webp",
+    "static/media/gloss_model.png": "/lippick/static/media/gloss_model.8f2b865ad0588b01676b.png",
+    "static/media/lipstick_banner_s.webp": "/lippick/static/media/lipstick_banner_s.5e1c6ac810e6cc647cfe.webp",
+    "static/media/lipstick_banner.webp": "/lippick/static/media/lipstick_banner.b47a97a560e2a38e2b5e.webp",
+    "static/media/gloss_banner.webp": "/lippick/static/media/gloss_banner.e66c0718b4ed6ffc580f.webp",
+    "static/media/liquid_banner.webp": "/lippick/static/media/liquid_banner.f1fea704ecab44e6a14a.webp",
+    "static/media/colortest_full.png": "/lippick/static/media/colortest_full.574729d9215d796716c5.png",
+    "static/media/loading.gif": "/lippick/static/media/loading.1a62bf7153f8736798ed.gif",
+    "static/media/lippick4.svg": "/lippick/static/media/lippick4.2493a4d697530af4c7d099e065b409e6.svg",
+    "static/media/slick.svg": "/lippick/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/lippick/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/lippick/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/lippick/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/lippick/index.html",
+    "main.0a3e8061.css.map": "/lippick/static/css/main.0a3e8061.css.map",
+    "main.25c9d980.js.map": "/lippick/static/js/main.25c9d980.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a3e8061.css",
+    "static/js/main.25c9d980.js"
+  ]
+}
