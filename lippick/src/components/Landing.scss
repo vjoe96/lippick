@@ -1,0 +1,134 @@
+.product-content-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.9rem;
+  margin-top: 3%;
+
+  .product-title {
+    font-weight: 500;
+    margin-top: 3%;
+  }
+  .product-tone,
+  .product-price {
+    font-weight: 100;
+    margin-top: 3%;
+  }
+}
+
+.bg-wrap {
+
+    
+
+  .bg {
+    width: 100%;
+    height: 64vh;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    position: relative;
+    background-size: cover;
+    display: inline-block;
+  }
+}
+
+.bg-lipstick {
+  background-image: url(../img/lipstick_banner.webp);
+}
+.bg-liquid{
+  background-image: url(../img/liquid_banner.webp);
+}
+.bg-gloss{
+  background-image: url(../img/gloss_banner.webp);
+}
+.bg-care{
+  background-image: url(../img/care_banner.webp);
+}
+.content-text {
+  width: 40%;
+  margin-bottom: 1%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  flex-direction: column;
+
+  .bg-title-2{
+    font-size:2rem;
+    font-weight: 500;
+    margin-bottom:10%;
+    display: none;
+  }
+}
+
+.ant-card-bordered:hover{
+  background-color: #eaeaea;
+  transition: 0.5s;
+
+}
+@media all and (min-width: 1401px) and (max-width: 1650px) {
+  .bg {
+    height: 60vh !important;
+  }
+}
+@media all and (min-width: 1023px) and (max-width: 1400px) {
+  .bg {
+    height: 50vh !important;
+  }
+}
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .bg {
+    height: 35vh !important;
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .content-text {
+    width: 60% !important;
+    margin-bottom:15%!important;
+  }
+
+  .bg-wrap{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+
+  }
+  .bg {
+    margin-top: 15% !important;
+    margin: 0 auto;
+    height:50vh !important;
+    
+    background-size: contain !important;
+  }
+  .bg-title-1{
+    display:none;
+  }
+  .bg-title-2{
+    display: block !important;
+  }
+  .bg-lipstick {
+    background-image: url(../img/lipstick_banner_s.webp);
+    background-position: 100%;
+  }
+  .bg-liquid {
+    background-image: url(../img/liquid_banner_s.webp);
+    background-position: 100%;
+  }
+
+  .bg-gloss{
+    background-image: url(../img/gloss_banner_s.webp);
+    background-position: 100%;
+  }
+  .bg-care{
+    background-image: url(../img/care_banner_s.webp);
+    background-position: 100%;
+  }
+
+}

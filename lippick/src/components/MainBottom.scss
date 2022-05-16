@@ -1,0 +1,130 @@
+.high-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 10vh;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+}
+
+.main-bottom-wrap {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  min-height: 10vh;
+  max-width: 1640px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .link-box {
+    position: absolute;
+    display: flex;
+    bottom: 5vh;
+    left: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    width: 15vw;
+    font-size: 0.9rem;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    transition: 0.5s;
+    min-width: 85px;
+    max-width:288px;
+    max-height: 54px;
+
+   
+  }
+
+  .link-box:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.icon-box {
+  position: absolute;
+  display: flex;
+  bottom: 5.5vh;
+  right: 0;
+
+  svg {
+    fill: white;
+    font-size: 4vw;
+    max-width: 30px;
+    cursor: pointer;
+    margin-left: 5%;
+    max-height: 35px;
+  }
+}
+
+@media all and (min-width: 1401px) and (max-width: 1919px) {
+  .link-box {
+    margin-left: 3.5vw;
+    
+  }
+
+  .icon-box {
+    margin-right: 3.5vw;
+  }
+}
+
+@media all and (min-width: 1023px) and (max-width: 1400px) {
+  .link-box {
+    margin-left: 3vw;
+  
+  }
+
+  .icon-box {
+    margin-right: 3vw;
+  }
+}
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .link-box {
+    height: 3vh;
+    margin-left: 3vw;
+    max-height: 30px;
+    span {
+      font-size: 0.7rem;
+    }
+  }
+
+  .icon-box {
+    margin-right: 3vw;
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .link-box {
+    margin-left: 4vw;
+    max-height: 30px;
+    span {
+      font-size: 0.3rem;
+    }
+  }
+  .icon-box {
+    margin-right: 4vw;
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+
+@media all and (max-width: 479px) {
+  .link-box {
+    max-height: 30px;
+
+    span {
+      font-size: 0.1rem;
+    }
+  }
+}

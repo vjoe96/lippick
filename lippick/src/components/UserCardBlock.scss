@@ -1,0 +1,133 @@
+.card-top-wrap {
+  width: 100%;
+  transition: 0.5s;
+
+  font-size:0.9rem;
+  .card-title {
+    margin: 0;
+    padding: 0;
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-weight: 300;
+      margin-bottom:5%;
+    }
+  }
+
+  .card-wrap {
+    display: flex;
+    margin-bottom: 5%;
+    border: 1px solid #eaeaea;
+    .card-left {
+      flex: 0.5;
+      width: 100%;
+      cursor: pointer;
+      transition: 0.5s;
+
+      img {
+        width: 100%;
+        border-right: 1px solid #eaeaea;
+      }
+    }
+
+    .card-left:hover {
+      background-color: #eaeaea;
+    }
+
+    .card-right {
+      flex: 0.5;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      .card-right-top {
+        padding: 5%;
+        border-bottom: 1px solid #eaeaea;
+        flex: 0.15 1;
+        display: flex;
+        align-items: center;
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 300;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      }
+
+      .card-right-mid {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex: 0.7;
+
+        .card-right-mid-top {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row;
+        }
+      }
+
+      .card-right-bottom {
+        display: flex;
+        width: 100%;
+        flex: 0.15;
+        align-items: center;
+        border-top: 1px solid #eaeaea;
+
+        a {
+          flex: 0.5;
+          width: 100%;
+          cursor: pointer;
+          text-align: center;
+        }
+        .card-right-bottom-btn {
+          flex: 0.5 1;
+          width: 100%;
+          cursor: pointer;
+          text-align: center;
+          border-left: 1px solid #eaeaea;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 1023px) and (max-width: 1400px) {
+    
+}
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .card-right-bottom{
+
+      span{
+        font-size:0.8rem !important;
+      }
+    }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+
+  .card-right-top{
+
+    h3{
+
+      font-size:0.9rem !important;
+    }
+  }
+  .card-right-bottom{
+
+    span{
+      font-size:0.7rem !important;
+    }
+  }
+    
+}

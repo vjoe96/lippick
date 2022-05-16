@@ -1,0 +1,129 @@
+.register-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  margin-top: 10%;
+  height: 100vh;
+  padding-right:1%;
+  .register-form {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .register-text {
+      font-size: 0.8rem;
+      height: 150px;
+      resize: none;
+      border: 1px solid #eaeaea;
+      padding: 2%;
+      margin-bottom:5%;
+    }
+    .register-text:focus {
+      border: 1px solid #eaeaea;
+      outline: none;
+    }
+
+    .register-checkbox-wrap {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3%;
+
+      .register-checkbox {
+        display: none;
+      }
+
+      .register-checkbox + label {
+        cursor: pointer;
+      }
+      .register-checkbox:focus {
+        border: none;
+        outline: none;
+      }
+
+      .register-checkbox + .register-label:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 17px;
+        border: 1px solid #cbcbcb;
+        margin-right: 10px;
+        vertical-align: middle; /*체크 전과 체크 후 높이 차이 때문에 설정*/
+      }
+
+      .register-checkbox:checked + .register-label:before {
+        content: "\f00c"; /*폰트어썸 유니코드*/
+        font-family: "Font Awesome 5 free"; /*폰트어썸 아이콘 사용*/
+        font-weight: 900; /*폰트어썸 설정*/
+        color: #fff;
+        background-color: rgb(212, 13, 80);
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+    .register-title {
+      font-weight: 500;
+    }
+
+    .register-input {
+      height: 40px;
+      border: none;
+      outline: none;
+      border: 1px solid #eaeaea;
+      border-radius: 5px;
+      padding-left: 2%;
+      font-size: 0.9rem;
+      margin-bottom: 3%;
+      margin-top: 1%;
+    }
+
+    .register-input:focus {
+      border: 2px solid #333333;
+    }
+
+    .register-btn {
+      outline: none;
+      border: none;
+      background-color: black;
+      color: white;
+      height: 60px;
+      margin-top: 10%;
+      transition: 0.5s;
+      width: 100%;
+    }
+
+    .register-btn:hover {
+      background-color: white;
+      color: #333;
+      border: 1px solid #333;
+    }
+  }
+}
+
+
+@media all and (min-width: 1023px) and (max-width: 1400px) {
+    
+    .register-wrap{
+        margin-top:15% !important;
+    }
+}
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    
+    .register-wrap{
+        margin-top:15% !important;
+    }
+
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+    
+    .register-wrap{
+        margin-top:25% !important;
+    }
+}

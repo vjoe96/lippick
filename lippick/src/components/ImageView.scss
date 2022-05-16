@@ -1,0 +1,264 @@
+/* label 스타일 조정 */
+.button {
+  display: flex;
+  justify-content: center;
+}
+label {
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* 못생긴 기존 input 숨기기 */
+#chooseFile {
+  visibility: hidden;
+}
+
+.colortest-wrap {
+  width: 100%;
+  position: relative;
+  margin-top: 10%;
+  display: flex;
+  max-width: 1640px;
+  margin-bottom: 5%;
+  justify-content: center;
+  transition: 0.5s;
+  height: 725px !important;
+  font-size: 0.9rem;
+
+  .colortest-left-wrap {
+    flex: 0.4 1;
+    border: 1px solid #eaeaea;
+    padding: 5%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 480px;
+      max-height: 700px;
+    }
+    .test-img{
+
+      position: relative;
+  
+      .test-canvas-wrap{
+        position: absolute;
+        width:100%;
+    
+        transform: translateY(-100%);
+        canvas{
+          width:100%;
+        }
+      }
+    }
+  }
+
+  .colortest-right-wrap {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 4%;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    max-width: 820px;
+
+    padding-right: 5%;
+
+    .colortest-right-wrap-title {
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+
+    .colortest-right-wrap-span {
+    }
+  }
+}
+
+.input-image-wrap {
+  margin-right: 3%;
+  width: 100%;
+  min-width: 100px;
+  .input-image-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    width: 100%;
+    height: 7vh;
+
+    .icon-wrap {
+      border-radius: 30px;
+      background-color: pink;
+      width: 40px;
+      height: 40px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      svg {
+        font-size: 1.5rem;
+        color: black;
+      }
+    }
+  }
+
+  span {
+    width: 50%;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+.test-slide-img {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 50%;
+    cursor: pointer;
+  }
+}
+
+.test-slide-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .slick-slider {
+    width: 60% !important;
+  }
+  .slick-next {
+    right: -10% !important;
+    top: 45% !important;
+  }
+  .slick-prev {
+    left: -10% !important;
+    top: 45% !important;
+  }
+  .slick-prev::before,
+  .slick-next::before {
+    color: black !important;
+    font-size: 2rem !important;
+  }
+  .slick-prev::hover,
+  .slick-next::hover {
+    color: #d40d50 !important;
+  }
+
+  .slick-prev::before {
+    content: "\f104" !important;
+    font-family: "Font Awesome 5 free"; /*폰트어썸 아이콘 사용*/
+    font-weight: 900; /*폰트어썸 설정*/
+  }
+  .slick-next::before {
+    content: "\f105" !important;
+    font-family: "Font Awesome 5 free"; /*폰트어썸 아이콘 사용*/
+    font-weight: 900; /*폰트어썸 설정*/
+  }
+}
+.btn-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 330px;
+  bottom: 10%;
+  transition: 0.5s;
+}
+
+.test-span {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.loading-wrap {
+  position: fixed;
+  z-index: 930;
+  top: 40%;
+  left: 43.2%;
+  
+}
+
+@media all and (min-width: 1401px) and (max-width: 1919px) {
+  .colortest-right-wrap {
+    h1 {
+      font-size: 1.5rem;
+    }
+    span {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media all and (min-width: 1023px) and (max-width: 1400px) {
+  .colortest-right-wrap {
+    h1 {
+      font-size: 1.3rem;
+    }
+    span {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media all and (max-width: 1465px) {
+  .colortest-wrap {
+    margin-top: 15% !important;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .colortest-left-wrap {
+    width: 100% !important;
+   
+    
+  }
+  .colortest-right-wrap {
+    border: none !important;
+    width: 100% !important;
+    min-height: 700px;
+
+    h1 {
+      font-size: 1.3rem;
+    }
+    span {
+      font-size: 0.9rem;
+    }
+  }
+
+  .footer-wrap {
+    position: static !important;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+
+  .test-slide-wrap{
+    margin-top:10% !important;
+  }
+  .btn-wrap{
+  }
+  .test-span{
+    font-size:0.8rem !important;
+  }
+  .product-title{
+    font-size:0.8rem !important;
+  }
+}
+
+@media all and (max-width: 479px) {
+}

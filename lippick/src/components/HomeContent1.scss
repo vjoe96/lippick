@@ -1,0 +1,178 @@
+.content-wrap {
+  max-width: 1640px;
+  width: 100%;
+  top: 100%;
+  position: relative;
+
+  margin-top: 5vh;
+  max-height: 639px;
+  margin-bottom: 5vh;
+
+  .content-box {
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    height: 70vh;
+    max-height: 639px;
+    transition: 0.5s;
+    font-family: "Couture", sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .deg90 {
+      font-size: 2rem;
+      letter-spacing: 0.3rem;
+      transform: rotate(-90deg);
+      position: absolute;
+      left: -130px;
+      transition: 0.5s;
+    }
+
+    .content-img-wrap {
+      display: flex;
+      position: absolute;
+      width: 930px;
+      height: 515px;
+      z-index: 100;
+      transition: 0.5s;
+
+      .content-img-box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.btn-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 935px;
+    height: 10vh;
+    margin-top: 46vh;
+    z-index: 300;
+    position: relative;
+    transition: 0.5s;
+  .btn-wrap-home{
+    display: flex;
+
+    bottom: 10%;
+    position: absolute;
+    right: 0;
+    .slide-btn {
+      font-size: 2rem;
+      cursor: pointer;
+      position: relative;
+      z-index: 600;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      svg {
+        font-size: 2rem;
+        color: white;
+      }
+    }
+  }
+}
+
+.content-text-wrap {
+  bottom: 10%;
+    position: absolute;
+    left: 0;
+  span {
+    font-size: 2rem;
+  }
+}
+
+.content1-img-1 {
+  background-image: url(../img/lipstick_model.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.content1-img-2 {
+  background-image: url(../img/liquid_model.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s;
+
+  cursor: pointer;
+}
+
+.content1-img-3 {
+  background-image: url(../img/gloss_model.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.content1-img-4 {
+  background-image: url(../img/care_model.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media all and (min-width: 1401px) and (max-width: 1919px) {
+}
+
+@media all and (min-width: 1023px) and (max-width: 1400px) {
+  .content-img-wrap,.btn-box {
+    width: 744px !important;
+    height: 360px !important;
+  }
+  .btn-box{
+    margin-top: 20vh !important;
+  }
+}
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .content-wrap {
+    margin-top: 4vh;
+    .content-box {
+      height: 50vh !important;
+    }
+
+    .content-img-wrap,.btn-box {
+      width: 558px !important;
+      height: 270px !important;
+    }
+    .btn-box{
+      margin-top: 20vh !important;
+    }
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .deg90 {
+    left: -80px !important;
+    font-size: 1rem !important;
+  }
+  .content-wrap {
+    margin-top: 4vh;
+    .content-box {
+      height: 35vh !important;
+    }
+    .content-img-wrap,.btn-box {
+      width: 372px !important;
+      height: 180px !important;
+    }
+    .btn-box{
+      margin-top: 16vh !important;
+    }
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+
+@media all and (max-width: 479px) {
+}

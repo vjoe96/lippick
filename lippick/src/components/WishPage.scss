@@ -1,0 +1,165 @@
+.wish-top-wrap {
+  margin-top: 10%;
+  width: 80%;
+  height: auto;
+  .wish-wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .wish-item-wrap {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      align-items: center;
+      margin-right: 5%;
+      margin-top: 5%;
+
+      .wish-item-top {
+        width: 100%;
+        position: relative;
+        .wish-btn-removeFromWish {
+          border: none;
+          outline: none;
+          background-color: transparent;
+          position: absolute;
+          right: 0;
+        }
+
+        img {
+          width: 100%;
+          border: 1px solid #eaeaea;
+
+          cursor: pointer;
+        }
+      }
+      .wish-item-top:hover {
+        background-color: #eaeaea;
+        transition: 0.5s;
+      }
+
+      .wish-item-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1%;
+        padding: 5%;
+        .wish-item-title {
+          font-size: 1.2rem;
+          font-weight: 400;
+          margin-bottom: 5%;
+        }
+
+        .wish-item-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+
+          .wish-item-info-top {
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #eaeaea;
+            span {
+              display: block;
+              width: 100%;
+              padding-bottom: 3%;
+              margin-top: 3%;
+            }
+          }
+
+          .wish-item-info-bottom {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            border-bottom: 1px solid #eaeaea;
+            margin-top: 3%;
+            padding-bottom: 3%;
+
+            .wish-item-circle {
+              width: 20px;
+              height: 20px;
+              border-radius: 10px;
+            }
+          }
+        }
+
+        .wish-btn-removeAndCart {
+          border: none;
+          outline: none;
+          background-color: black;
+          width: 100%;
+          color: white;
+          height: 60px;
+          margin-top: 10%;
+          transition: 0.5s;
+        }
+        .wish-btn-removeAndCart:hover {
+          background-color: white !important;
+          border: 1px solid black;
+          color: black !important;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1023px) and (max-width: 1400px) {
+  .wish-item-title {
+    span {
+      font-size: 1rem !important;
+    }
+  }
+  .wish-item-info {
+    span {
+      font-size: 0.9rem !important;
+    }
+  }
+
+  .wish-top-wrap .wish-wrap .wish-item-wrap {
+    width: 30% !important;
+    margin-right: 3% !important;
+  }
+}
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .wish-top-wrap {
+        margin-top:15% !important;
+      .wish-wrap {
+        .wish-item-wrap {
+          width: 45% !important;
+          margin-right: 5% !important;
+        }
+      }
+    }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .wish-top-wrap {
+      margin-top:25% !important;
+    .wish-wrap {
+      .wish-item-wrap {
+        width: 100% !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
+
+
+.wish-empty{
+
+  width:100%;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center ;
+}

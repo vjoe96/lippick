@@ -1,0 +1,54 @@
+.makeup-wrap {
+  width: 40vw;
+  height: 30vw;
+  
+
+  position: relative;
+  .cam-wrap {
+    position: absolute;
+    width: 100%;
+
+    height: 100%;
+
+    .cam {
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .canvas-wrap {
+    position: absolute;
+    width: 100%;
+
+    height: 100%;
+    .canvas {
+      z-index: 11;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .makeup-wrap{
+
+        width: 80vw !important;
+        height: 50vw !important;
+    }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .makeup-wrap{
+
+        width: 80vw !important;
+        height: 50vw !important;
+    }
+    
+}
+
+

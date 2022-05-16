@@ -1,0 +1,139 @@
+.show-false {
+  margin-top: 20vw !important;
+  margin-left: -2vw !important;
+}
+
+.bag-wrap {
+  width: 80%;
+  display: flex;
+  margin: 10% auto;
+  transition: 0.5s;
+  background-color: white;
+  padding-top: 3%;
+
+  .bag-left-wrap {
+    flex: 0.6;
+    padding: 5%;
+    padding-top: 0;
+    padding-left: 7%;
+  }
+  .bag-right-wrap {
+    flex: 0.4;
+    padding-top: 4.3%;
+    padding-right: 7%;
+    font-size: 0.9rem;
+    margin-bottom: 17vh;
+
+    .bag-right-top {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-left: 14%;
+      padding-right: 14%;
+      margin-bottom: 5%;
+      .span-wrap {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-between;
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .bag-right-bottom {
+      padding-left: 14%;
+      padding-right: 14%;
+      margin-top: 15%;
+
+      .bag-right-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 10%;
+        padding-top: 5%;
+        border-bottom: 1px solid #eaeaea;
+        margin-top: 5%;
+
+        .bag-right-item-left {
+          flex: 0.2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            font-size: 1.5rem;
+          }
+        }
+        .bag-right-item-right {
+          flex: 0.8;
+          display: flex;
+          flex-direction: column;
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+  }
+}
+
+.paypal-button {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+@media all and (min-width: 1023px) and (max-width: 1400px) {
+  .bag-wrap {
+    flex-direction: column;
+
+    .bag-right-wrap {
+      padding-right: 0 !important;
+      padding-left: 7% !important;
+    }
+  }
+}
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .bag-wrap {
+    flex-direction: column;
+    margin: 15% auto !important;
+
+    .bag-right-wrap {
+      padding-right: 0 !important;
+      padding-left: 7% !important;
+    }
+  }
+
+  .show-false {
+    margin-top: 25vw !important;
+    margin-left: 0 !important;
+    pre {
+      padding: 0;
+    }
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  
+  .bag-wrap {
+    flex-direction: column;
+    margin: 20% auto !important;
+
+    .bag-right-wrap {
+      padding-right: 0 !important;
+      padding-left: 7% !important;
+    }
+  }
+
+
+  .show-false {
+    margin-top: 20vw !important;
+    margin-left: 0 !important;
+    pre {
+      padding: 0;
+    }
+  }
+}

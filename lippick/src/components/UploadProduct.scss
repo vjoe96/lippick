@@ -1,0 +1,68 @@
+
+.upload-wrap{
+
+    display: flex;
+    position: relative;
+    margin-top: 10%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .upload-form{
+
+        div{
+           
+            overflow: auto !important;
+  
+        }
+    }
+}
+
+
+
+.upload-bottom{
+
+    display: flex;
+    flex-direction: column;
+    
+    .upload-select{
+        width:20%;
+
+        option{
+            text-align: center;
+        }
+    }
+    .upload-btn{
+        width: 20%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media all and (min-width: 1023px) and (max-width: 1400px) {
+    
+    .upload-wrap{
+
+        margin-top:15% !important;
+    }
+}
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    
+    .upload-wrap{
+
+        margin-top:15% !important;
+    }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+    
+    .upload-wrap{
+
+        margin-top:20% !important;
+    }
+}

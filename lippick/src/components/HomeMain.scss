@@ -1,0 +1,16 @@
+.video-wrap {
+  max-width: 1903px;
+  max-height: 937px;
+  position: relative;
+  overflow: hidden;
+}
+
+.react-player {
+  max-width: 1903px;
+  max-height: 937px;
+  position: relative;
+
+  video {
+    max-width: 1903px;
+  }
+}

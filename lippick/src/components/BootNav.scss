@@ -1,0 +1,282 @@
+.ant-badge {
+  margin-top: 4% !important;
+  font-size: 0.9rem !important;
+  line-height: 1.1 !important;
+}
+
+.nav-wrap {
+  position: absolute;
+  background-color: transparent !important;
+  z-index: 900;
+  display: flex;
+  width: 100%;
+  min-height: 10vh;
+  transition: 0.5s;
+}
+
+.nav-wrap:hover {
+  color: black !important;
+  background-color: white !important;
+  position: absolute;
+  z-index: 910;
+  display: flex;
+  width: 100%;
+  min-height: 10vh;
+  transition: 0.5s;
+
+  .search-btn {
+    color: black !important;
+  }
+
+  .logo-menu {
+    color: black !important;
+  }
+
+  .nav-item {
+    color: black !important;
+  }
+
+  .logo-box {
+    fill: black !important;
+
+    svg {
+      fill: black !important;
+    }
+  }
+}
+.cw {
+  color: white !important;
+}
+
+.cb {
+  color: black !important;
+}
+
+.fw {
+  transition: 0.5s;
+  fill: white !important;
+}
+
+.fb {
+  transition: 0.5s;
+  fill: black !important;
+}
+
+.navON {
+  color: black !important;
+  background-color: white !important;
+  position: absolute;
+  z-index: 910;
+  display: flex;
+  width: 100%;
+  min-height: 10vh;
+  transition: 0.5s;
+}
+
+.nav-container {
+  margin: 0 auto;
+  max-width: 1640px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  position: relative;
+
+  .logo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+
+    a {
+      transition: 0.5s;
+      flex: 0.15;
+      text-align: center;
+    }
+
+    .logo-box {
+      width: 8vw;
+      min-width: 90px;
+      max-width: 160px;
+    }
+
+    .logo-menu {
+      display: flex;
+      color: white;
+      font-weight: 100;
+      font-size: 0.8rem;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        cursor: pointer;
+        margin-left: 3%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  font-size: 1rem !important;
+}
+.search-btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  position: relative;
+  left: 0;
+
+  span {
+    margin-left: 0.5vw;
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-bottom: 0.3vh;
+  }
+}
+
+.nav-menu {
+  position: relative;
+  right: 0;
+  .nav-link {
+    font-weight: 100;
+  }
+  .nav-item {
+    font-size: 1.3rem;
+    margin-left: 5%;
+  }
+}
+
+.link-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+
+  svg {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.balloon {
+  position: absolute;
+  margin-left: 16px;
+  top: 100%;
+  width: 100px;
+  height: 150px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px 1px #333;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      li {
+        margin-top: 10px;
+        .balloon-item {
+          font-size: 0.9rem;
+          cursor: pointer;
+        }
+      }
+    }
+    li {
+      margin-top: 10px;
+      .balloon-item {
+        font-size: 0.9rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.balloon:after {
+  border-top: 0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 40px;
+}
+
+@media all and (min-width: 1401px) and (max-width: 1919px) {
+  .logo-wrap {
+    a {
+      max-height: 65px !important;
+    }
+  }
+  .nav-menu {
+    margin-right: 2vw;
+  }
+}
+@media all and (min-width: 1023px) and (max-width: 1400px) {
+  .logo-wrap {
+    a {
+      max-height: 50px !important;
+      flex: 0.2 !important;
+    }
+  }
+  .nav-menu {
+    margin-right: 3vw;
+  }
+}
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .logo-wrap {
+    a {
+      max-height: 45px !important;
+      flex: 0.25 !important;
+    }
+    span {
+      font-size: 0.7rem !important;
+    }
+  }
+
+  .nav-menu {
+    margin-right: 3vw;
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .logo-wrap {
+    margin-left: 10%;
+  }
+  .logo-box {
+    top: 20px !important;
+    position: relative !important;
+  }
+  .logo-menu {
+    display: none !important;
+  }
+  .nav-menu {
+    margin-right: 4vw;
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+
+@media all and (max-width: 479px) {
+  .link-box {
+    max-height: 30px;
+
+    span {
+      font-size: 0.1rem;
+    }
+  }
+}
