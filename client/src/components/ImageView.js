@@ -27,7 +27,7 @@ function ImageView(props) {
         slidesToShow: 1,
         slidesToScroll: 1,
     };
-
+    let domain = window.location.protocol + "//" + window.location.hostname;
     useEffect(() => {
         props.dispatch({ type: "nav-on" });
     }, [props.navTG]);
@@ -268,7 +268,7 @@ function ImageView(props) {
                                             }
                                         >
                                             <img
-                                                src={`http://localhost:5000/${product.images[0]}`}
+                                                src={`${domain}:5000/${product.images[0]}`}
                                                 alt=""
                                             />
 

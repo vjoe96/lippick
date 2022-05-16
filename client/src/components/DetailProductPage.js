@@ -28,8 +28,8 @@ const { Option } = Select;
 function DetailProductPage(props) {
     useEffect(() => {
         props.dispatch({ type: "nav-on" });
-        props.dispatch({type:"hAlert-off"});
-        props.dispatch({type:"bAlert-off"});
+        props.dispatch({ type: "hAlert-off" });
+        props.dispatch({ type: "bAlert-off" });
     }, []);
     useEffect(() => {
         props.dispatch({ type: "bag-get" });
@@ -43,6 +43,7 @@ function DetailProductPage(props) {
             props.dispatch({ type: "bag-get" });
         }, 1000);
     }, [props]);
+    let domain = window.location.protocol + "//" + window.location.hostname;
     const dispatch = useDispatch();
 
     const productId = props.match.params.productId;
@@ -68,8 +69,6 @@ function DetailProductPage(props) {
 
         getProducts(body);
         props.dispatch({ type: "loading-start" });
-        
-        
     }, []);
 
     const splitTitle = (text, number) => {
@@ -139,7 +138,7 @@ function DetailProductPage(props) {
         }
         dispatch(addToCart(productId));
         //alert("상품을 장바구니에 추가했습니다.");
-        dispatch({type:"bAlert-on"});
+        dispatch({ type: "bAlert-on" });
     };
 
     const changeTry = () => {
@@ -523,7 +522,7 @@ function DetailProductPage(props) {
                                   return (
                                       <div className="detail-slide-img">
                                           <img
-                                              src={`http://localhost:5000/${desc}`}
+                                              src={`${domain}:5000/${desc}`}
                                               alt=""
                                           />
                                       </div>
@@ -559,7 +558,7 @@ function stateprops(state) {
         heart: state.reducer13,
         bagCount: state.setBagCount,
         hAlert: state.reducer14,
-        bAlert : state.reducer15,
+        bAlert: state.reducer15,
     };
 }
 

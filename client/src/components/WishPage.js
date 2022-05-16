@@ -21,6 +21,7 @@ function WishPage(props) {
             }, i * 250);
         }
     };
+    let domain = window.location.protocol + "//" + window.location.hostname;
     useEffect(() => {
         props.dispatch({ type: "nav-on" });
     }, [props.navTG]);
@@ -50,7 +51,7 @@ function WishPage(props) {
             dispatch(addToCart(productId))
         );
         bagGet();
-        props.dispatch({type:"bAlert-on"});
+        props.dispatch({ type: "bAlert-on" });
     };
 
     return (
@@ -58,7 +59,7 @@ function WishPage(props) {
             {wishShow ? (
                 <div>
                     <h3>나의 위시리스트</h3>
-                    {props.bAlert && <Balert/>}
+                    {props.bAlert && <Balert />}
                     <div className="wish-wrap">
                         {props.user &&
                             props.user.wishDetail &&
@@ -78,7 +79,7 @@ function WishPage(props) {
                                                 &times;
                                             </button>
                                             <img
-                                                src={`http://localhost:5000/${item.images[0]}`}
+                                                src={`${domain}:5000/${item.images[0]}`}
                                                 alt="product"
                                             />
                                         </div>

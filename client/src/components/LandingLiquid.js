@@ -18,7 +18,7 @@ function LandingLiquid(props) {
         textDecoration: "none",
         maxHeight: "75px",
     };
-
+    let domain = window.location.protocol + "//" + window.location.hostname;
     useEffect(() => {
         props.dispatch({ type: "nav-on" });
     }, [props.navTG]);
@@ -79,9 +79,7 @@ function LandingLiquid(props) {
                 >
                     <Card
                         cover={
-                            <img
-                                src={`http://localhost:5000/${product.images[0]}`}
-                            />
+                            <img src={`${domain}:5000/${product.images[0]}`} />
                         }
                     ></Card>
                 </Link>

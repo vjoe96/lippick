@@ -22,7 +22,7 @@ function LandingGloss(props) {
     useEffect(() => {
         props.dispatch({ type: "nav-on" });
     }, [props.navTG]);
-
+    let domain = window.location.protocol + "//" + window.location.hostname;
     useEffect(() => {
         let body = {
             skip: Skip,
@@ -79,9 +79,7 @@ function LandingGloss(props) {
                 >
                     <Card
                         cover={
-                            <img
-                                src={`http://localhost:5000/${product.images[0]}`}
-                            />
+                            <img src={`${domain}:5000/${product.images[0]}`} />
                         }
                     ></Card>
                 </Link>
